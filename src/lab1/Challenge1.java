@@ -22,7 +22,6 @@ public class Challenge1 {
         Challenge1 app = new Challenge1();
         
         String fullName = JOptionPane.showInputDialog("Enter full name (use Format: first last):");
-        
         String lastName = null;
         try{
         lastName =app.extractLastName(fullName);

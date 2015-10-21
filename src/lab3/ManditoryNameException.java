@@ -9,24 +9,24 @@ package lab3;
  *
  * @author smuth4
  */
-public class NameOutOfRangeException extends Exception {
+public class ManditoryNameException extends Exception {
 
     private static final String MSG = 
             "Name cannot be Null, and also must not be Empty.";
     
-    public NameOutOfRangeException() {
+    public ManditoryNameException() {
         super(MSG);
     }
 
-    public NameOutOfRangeException(String message) {
+    public ManditoryNameException(String message) {
         super(MSG);
     }
 
-    public NameOutOfRangeException(String message, Throwable cause) {
+    public ManditoryNameException(String message, Throwable cause) {
         super(MSG, cause);
     }
 
-    public NameOutOfRangeException(Throwable cause) {
+    public ManditoryNameException(Throwable cause) {
         super(MSG, cause);
     }
     

@@ -17,12 +17,12 @@ public class NameService {
      * 
      * @param fullName - a name containing a first name and a last name
      * @return the last name
-     * @throws lab3.NameOutOfRangeException
+     * @throws lab3.ManditoryNameException
      */
-    public String extractLastName(String fullName) throws NameOutOfRangeException {
+    public String extractLastName(String fullName) throws ManditoryNameException {
         if (fullName == null || fullName.isEmpty()) {
-            //This passed Exception will not be displayed, the message within the NameOutOfRangeException class will be displayed (used this as proof)
-            throw new NameOutOfRangeException("Name cannot be null, please try again");
+            //This passed Exception will not be displayed, the message within the ManditoryNameException class will be displayed (used this as proof)
+            throw new ManditoryNameException("Name cannot be null, please try again");
         } else {
         String[] nameParts = fullName.split(" ");
         return nameParts[LAST_NAME_IDX];
@@ -35,10 +35,11 @@ public class NameService {
      * 
      * @param fullName - a name containing a first name and a last name
      * @return the first name
+     * @throws lab3.ManditoryNameException
      */
-    public String extractFirstName(String fullName) throws NameOutOfRangeException {
+    public String extractFirstName(String fullName) throws ManditoryNameException {
         if (fullName == null || fullName.isEmpty()) {
-            throw new NameOutOfRangeException("Name cannot be null, please try again");
+            throw new ManditoryNameException("Name cannot be null, please try again");
         } else {
         String[] nameParts = fullName.split(" ");
         return nameParts[FIRST_NAME_IDX];

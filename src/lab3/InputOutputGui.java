@@ -23,7 +23,7 @@ public class InputOutputGui {
         String msg = "Your last name is: " + lastName;
         JOptionPane.showMessageDialog(null, msg);
         } catch (Exception e){
-            System.out.println(e);
+            JOptionPane.showMessageDialog(null, e.getMessage());
         }
         
         
