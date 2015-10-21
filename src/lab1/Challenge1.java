@@ -27,7 +27,7 @@ public class Challenge1 {
         try{
         lastName =app.extractLastName(fullName);
         } catch (IllegalArgumentException e) {
-            System.out.println(e);
+            JOptionPane.showMessageDialog(null, e.getMessage());
         }
         String msg = "Your last name is: " + lastName;
         JOptionPane.showMessageDialog(null, msg);
